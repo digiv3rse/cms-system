@@ -135,7 +135,7 @@ With an existing app already set up, you will need to render the `Cms` component
 
 ```jsx
 import React from "react";
-import { Cms } from "@alethio/cms";
+import { Cms } from "@digiv3rse/cms";
 import { createTheme } from "@alethio/ui/lib/theme/createTheme";
 import { createPalette } from "@alethio/ui/lib/theme/createPalette";
 
@@ -191,7 +191,7 @@ For examples, see the [plugin tutorial](#plugin-tutorial).
 
 You can start by creating the plugin boilerplate with the CMS plugin tool:
 
-`$ npm i -g @alethio/cms-plugin-tool@^1.0.0-beta.4`
+`$ npm i -g @digiv3rse/cms-plugin-tool@^1.0.0-beta.4`
 
 Create a new empty folder where the plugin sources will be generated (this can be a git repo checkout):
 
@@ -1058,7 +1058,7 @@ Assuming our app has a `dist` folder for the built assets, we can install the pl
 
 The following changes will be needed:
 1. In the CMS config we'll specify `"pluginsBaseUrl": "/plugins"`.
-2. In the app repo we'll execute `$ acp install <plugin_npm_package_name_or_local_folder>`. See `@alethio/cms-plugin-tool` for usage.
+2. In the app repo we'll execute `$ acp install <plugin_npm_package_name_or_local_folder>`. See `@digiv3rse/cms-plugin-tool` for usage.
 
 This will copy the built plugins inside `dist/plugins` folder.
 
@@ -1100,7 +1100,7 @@ Example:
 import React from "react";
 import ReactDOM from "react-dom";
 import { Observer } from "mobx-react";
-import { Cms } from "@alethio/cms";
+import { Cms } from "@digiv3rse/cms";
 import { Layer } from "@alethio/ui/lib/overlay/Layer";
 import { Mask } from "@alethio/ui/lib/overlay/Mask";
 import { HelpIcon } from "@alethio/ui/lib/icon/HelpIcon";
